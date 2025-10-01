@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Nexa Reply - L'IA qui gère vos commentaires automatiquement</title>
-        <meta name="description" content="Arrêtez de perdre 3 heures par jour à répondre aux commentaires. L'IA qui gère YouTube, Facebook et Instagram automatiquement." />
+        <title>Nexa Reply - L&apos;IA qui gère vos commentaires automatiquement</title>
+        <meta name="description" content="Arrêtez de perdre 3 heures par jour à répondre aux commentaires. L&apos;IA qui gère YouTube, Facebook et Instagram automatiquement." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -33,10 +33,10 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <h1>
-              Arrêtez de perdre <span className={styles.highlight}>3 heures par jour</span> à répondre aux commentaires
+              Votre audience parle. <span className={styles.highlight}>Votre IA répond</span> comme vous l&apos;auriez fait.
             </h1>
             <p>
-              L'IA qui gère vos commentaires YouTube, Facebook et Instagram pendant que vous vous concentrez sur l'essentiel. 
+              L&apos;IA qui gère vos commentaires YouTube, Facebook et Instagram pendant que vous vous concentrez sur l&apos;essentiel. 
               <strong> Configuration en 2 minutes. Résultats immédiats.</strong>
             </p>
             
@@ -59,8 +59,8 @@ export default function Home() {
               <div className={styles.bannerContent}>
                 <h2 className={styles.bannerTitle}>🎯 Enfin ! Un assistant IA qui comprend votre communauté</h2>
                 <p className={styles.bannerText}>
-                  Plus de robots stupides qui répondent n'importe quoi. Nexa Reply apprend votre style, 
-                  respecte vos règles et ne répond que quand c'est pertinent.
+                  Plus de robots stupides qui répondent n&apos;importe quoi. Nexa Reply apprend votre style, 
+                  respecte vos règles et ne répond que quand c&apos;est pertinent.
                 </p>
                 
                 <div className={styles.trustBadges}>
@@ -73,7 +73,7 @@ export default function Home() {
             
             <div className={styles.ctaGroup}>
               <button className={styles.ctaPrimary}>
-                🔥 50% de réduction à vie - 50 premières personnes
+                🔥 50% de réduction les 6 premiers mois - 50 premières personnes
               </button>
               <p className={styles.ctaExplanation}>
                 Produit en phase de test - Contactez-nous pour réserver votre place parmi les 50 premiers et être averti du lancement
@@ -108,14 +108,14 @@ export default function Home() {
                   <div className={styles.timeBadge}>1 minute</div>
                   <div className={styles.stepNumber}>2</div>
                   <h3>🎨 Configurez votre assistant</h3>
-                  <p>Personnalisez l'IA pour qu'elle réponde exactement comme vous</p>
+                  <p>Personnalisez l&apos;IA pour qu&apos;elle réponde exactement comme vous</p>
                   <div className={styles.stepDetails}>
                     <ul className={styles.featureList}>
-                      <li><strong>Ton :</strong> Amical, professionnel, fun, sarcastique...</li>
-                      <li><strong>Langues :</strong> Principale + 2 supplémentaires max</li>
-                      <li><strong>Délai :</strong> Instantané, 5min, 30min, 1h...</li>
-                      <li><strong>Horaires :</strong> 24/7 ou créneaux personnalisés</li>
-                      <li><strong>Règles :</strong> "Jamais de conseils médicaux", "Rediriger collabs vers email"</li>
+                      <li><strong>Ton:</strong> Amical, professionnel, fun, sarcastique...</li>
+                      <li><strong>Langues:</strong> Principale + 2 supplémentaires max</li>
+                      <li><strong>Délai:</strong> Instantané, 5min, 30min, 1h...</li>
+                      <li><strong>Horaires:</strong> 24/7 ou créneaux personnalisés</li>
+                      <li><strong>Règles:</strong> &apos;Jamais de conseils médicaux&apos;, &apos;Rediriger collabs vers email&apos;</li>
                     </ul>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function Home() {
                 <div className={styles.step}>
                   <div className={styles.timeBadge}>Automatique</div>
                   <div className={styles.stepNumber}>3</div>
-                  <h3>🤖 L'IA travaille pour vous</h3>
+                  <h3>🤖 L&apos;IA travaille pour vous</h3>
                   <p>Réponses automatiques 24/7 pendant que vous créez du contenu</p>
                   <div className={styles.stepDetails}>
                     <ul className={styles.featureList}>
@@ -138,8 +138,43 @@ export default function Home() {
 
               <div className={styles.resultHighlight}>
                 <div className={styles.icon}>⚡</div>
-                <h4>Résultat : 10x plus de temps pour vous concentrer sur l'essentiel</h4>
+                <h4>Résultat : 10x plus de temps pour vous concentrer sur l&apos;essentiel</h4>
                 <p>Votre audience reçoit des réponses personnalisées 24/7. Votre communauté reste engagée, vous gardez du temps pour ce qui compte vraiment.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className={styles.features}>
+          <div className={styles.featuresContent}>
+            <h2>🎯 Fonctionnalités avancées</h2>
+            <p className={styles.featuresSubtitle}>Des outils professionnels pour gérer votre automatisation</p>
+            
+            <div className={styles.featuresGrid}>
+              <div className={styles.featureCard}>
+                <div className={styles.featureIcon}>📊</div>
+                <h3>Reporting & Analytics</h3>
+                <p className={styles.featureDescription}>Pilotez votre automatisation</p>
+                <ul className={styles.featureList}>
+                  <li>Suivez vos réponses envoyées et temps de réponse moyen de l&apos;IA</li>
+                  <li>Visualisez l&apos;évolution sur 30 jours avec graphiques interactifs</li>
+                  <li>Consultez l&apos;historique complet : commentaire original, réponse générée, vidéo concernée</li>
+                  <li>Exportez vos données en CSV avec filtres personnalisés</li>
+                  <li>Gérez vos quotas : utilisation en temps réel et alertes à 80%</li>
+                </ul>
+              </div>
+
+              <div className={styles.featureCard}>
+                <div className={styles.featureIcon}>👥</div>
+                <h3>Workspace</h3>
+                <p className={styles.featureDescription}>Multi-comptes et gestion d&apos;équipe</p>
+                <ul className={styles.featureList}>
+                  <li>Gérez plusieurs chaînes YouTube avec isolation totale des données</li>
+                  <li>Invitez votre équipe avec 4 niveaux de permissions (Propriétaire, Admin, Membre, Visiteur)</li>
+                  <li>Contrôlez qui peut modifier les paramètres IA, valider les réponses ou consulter</li>
+                  <li>Centralisez toutes vos marques dans une interface unique</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -157,16 +192,16 @@ export default function Home() {
             
             <div className={styles.pricingGrid}>
               <div className={styles.pricingCard}>
-                <h4>🆓 Free</h4>
-                <div className={styles.price}>0€</div>
+                <h4>🚀 Starter</h4>
+                <div className={styles.price}>9€</div>
                 <div className={styles.pricePeriod}>/mois</div>
                 <p className={styles.priceDescription}>
-                  Idéal pour tester l'IA sur vos commentaires
+                  Idéal pour démarrer avec l&apos;IA
                 </p>
                 <ul className={styles.features}>
                   <li>YouTube uniquement</li>
                   <li>1 compte connecté</li>
-                  <li>50 réponses automatiques/mois</li>
+                  <li>100 réponses automatiques/mois</li>
                   <li>Configuration de base</li>
                   <li>1 langue</li>
                 </ul>
@@ -174,7 +209,7 @@ export default function Home() {
 
               <div className={styles.pricingCard}>
                 <h4>⚡ Standard</h4>
-                <div className={styles.price}>19€</div>
+                <div className={styles.price}>29€</div>
                 <div className={styles.pricePeriod}>/mois</div>
                 <p className={styles.priceDescription}>
                   Pour une utilisation régulière sur YouTube
@@ -182,7 +217,7 @@ export default function Home() {
                 <ul className={styles.features}>
                   <li>YouTube uniquement</li>
                   <li>2 comptes connectés</li>
-                  <li>1,000 réponses automatiques/mois</li>
+                  <li>500 réponses automatiques/mois</li>
                   <li>IA avancée + règles personnalisées</li>
                   <li>2 langues configurables</li>
                   <li>Analytics de base</li>
@@ -190,8 +225,8 @@ export default function Home() {
               </div>
 
               <div className={styles.pricingCard}>
-                <h4>🚀 Premium</h4>
-                <div className={styles.price}>49€</div>
+                <h4>💎 Premium</h4>
+                <div className={styles.price}>59€</div>
                 <div className={styles.pricePeriod}>/mois</div>
                 <p className={styles.priceDescription}>
                   Pour une utilisation intensive sur YouTube
@@ -199,7 +234,7 @@ export default function Home() {
                 <ul className={styles.features}>
                   <li>YouTube uniquement</li>
                   <li>5 comptes connectés</li>
-                  <li>10,000 réponses automatiques/mois</li>
+                  <li>1200 réponses automatiques/mois</li>
                   <li>Toutes les fonctionnalités IA</li>
                   <li>3 langues configurables</li>
                   <li>Analytics avancés</li>
@@ -216,8 +251,8 @@ export default function Home() {
             
             <div className={styles.pricingGrid}>
               <div className={styles.pricingCard}>
-                <h4>🆓 Free</h4>
-                <div className={styles.price}>0€</div>
+                <h4>🚀 Starter</h4>
+                <div className={styles.price}>15€</div>
                 <div className={styles.pricePeriod}>/mois</div>
                 <p className={styles.priceDescription}>
                   Testez sur les 3 plateformes principales
@@ -225,7 +260,7 @@ export default function Home() {
                 <ul className={styles.features}>
                   <li>3 plateformes (YouTube + Facebook + Instagram)</li>
                   <li>1 compte par plateforme</li>
-                  <li>50 réponses automatiques/mois (total)</li>
+                  <li>100 réponses automatiques/mois (total)</li>
                   <li>Configuration de base</li>
                   <li>1 langue</li>
                 </ul>
@@ -234,7 +269,7 @@ export default function Home() {
               <div className={`${styles.pricingCard} ${styles.featured}`}>
                 <div className={styles.popular}>🔥 Plus populaire</div>
                 <h4>⚡ Standard</h4>
-                <div className={styles.price}>29€</div>
+                <div className={styles.price}>39€</div>
                 <div className={styles.pricePeriod}>/mois</div>
                 <p className={styles.priceDescription}>
                   Automatisation complète multi-plateformes
@@ -242,7 +277,7 @@ export default function Home() {
                 <ul className={styles.features}>
                   <li>3 plateformes (YouTube + Facebook + Instagram)</li>
                   <li>2 comptes par plateforme</li>
-                  <li>1,000 réponses automatiques/mois (total)</li>
+                  <li>500 réponses automatiques/mois (total)</li>
                   <li>IA avancée + règles personnalisées</li>
                   <li>3 langues configurables</li>
                   <li>Analytics détaillés</li>
@@ -252,7 +287,7 @@ export default function Home() {
 
               <div className={styles.pricingCard}>
                 <h4>🏢 Premium</h4>
-                <div className={styles.price}>69€</div>
+                <div className={styles.price}>79€</div>
                 <div className={styles.pricePeriod}>/mois</div>
                 <p className={styles.priceDescription}>
                   Pour les agences et équipes
@@ -260,8 +295,8 @@ export default function Home() {
                 <ul className={styles.features}>
                   <li>3 plateformes (YouTube + Facebook + Instagram)</li>
                   <li>5 comptes par plateforme</li>
-                  <li>10,000 réponses automatiques/mois (total)</li>
-                  <li>Gestion d'équipe (2 sièges)</li>
+                  <li>1200 réponses automatiques/mois (total)</li>
+                  <li>Gestion d&apos;équipe (2 sièges)</li>
                   <li>Export analytics</li>
                   <li>Modèles personnalisés</li>
                   <li>Support dédié</li>

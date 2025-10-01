@@ -1,6 +1,6 @@
 // translations.js
 
-export const translations = {
+const translations = {
   fr: {
     nav: {
       howItWorks: "Comment ça marche",
@@ -9,12 +9,12 @@ export const translations = {
     },
     meta: {
       title: "Nexa Reply - L'IA qui gère vos commentaires automatiquement",
-      description: "Arrêtez de perdre 3 heures par jour à répondre aux commentaires. L'IA qui gère YouTube, Facebook et Instagram automatiquement."
+      description: "Votre audience parle. Votre IA répond comme vous l'auriez fait. L'IA qui gère YouTube, Facebook et Instagram automatiquement."
     },
     hero: {
-      title: "Arrêtez de perdre",
-      titleHighlight: "3 heures par jour",
-      titleEnd: "à répondre aux commentaires",
+      title: "Votre audience parle.",
+      titleHighlight: "Votre IA répond",
+      titleEnd: "comme vous l'auriez fait.",
       subtitle: "L'IA qui gère vos commentaires YouTube, Facebook et Instagram pendant que vous vous concentrez sur l'essentiel.",
       subtitleBold: "Configuration en 2 minutes. Résultats immédiats.",
       stats: {
@@ -32,7 +32,7 @@ export const translations = {
         }
       },
       cta: {
-        button: "🔥 50% de réduction à vie - 50 premières personnes",
+        button: "🔥 50% de réduction les 6 premiers mois - 50 premières personnes",
         explanation: "Produit en phase de test - Contactez-nous pour réserver votre place parmi les 50 premiers et être averti du lancement"
       }
     },
@@ -57,11 +57,11 @@ export const translations = {
           title: "🎨 Configurez votre assistant",
           description: "Personnalisez l'IA pour qu'elle réponde exactement comme vous",
           features: [
-            "<strong>Ton :</strong> Amical, professionnel, fun, sarcastique...",
-            "<strong>Langues :</strong> Principale + 2 supplémentaires max",
-            "<strong>Délai :</strong> Instantané, 5min, 30min, 1h...",
-            "<strong>Horaires :</strong> 24/7 ou créneaux personnalisés",
-            "<strong>Règles :</strong> \"Jamais de conseils médicaux\", \"Rediriger collabs vers email\""
+            "<strong>Ton: </strong> Amical, professionnel, fun, sarcastique...",
+            "<strong>Langues:</strong> Principale + 2 supplémentaires max",
+            "<strong>Délai:</strong> Instantané, 5min, 30min, 1h...",
+            "<strong>Horaires:</strong> 24/7 ou créneaux personnalisés",
+            "<strong>Règles:</strong> &quot;Jamais de conseils médicaux&quot;, &quot;Rediriger collabs vers email&quot;"
           ]
         },
         step3: {
@@ -82,34 +82,61 @@ export const translations = {
         description: "Votre audience reçoit des réponses personnalisées 24/7. Votre communauté reste engagée, vous gardez du temps pour ce qui compte vraiment."
       }
     },
+    features: {
+      title: "🎯 Fonctionnalités avancées",
+      subtitle: "Des outils professionnels pour gérer votre automatisation",
+      reporting: {
+        icon: "📊",
+        title: "Reporting & Analytics",
+        description: "Pilotez votre automatisation",
+        list: [
+          "Suivez vos réponses envoyées et temps de réponse moyen de l'IA",
+          "Visualisez l'évolution sur 30 jours avec graphiques interactifs",
+          "Consultez l'historique complet : commentaire original, réponse générée, vidéo concernée",
+          "Exportez vos données en CSV avec filtres personnalisés",
+          "Gérez vos quotas : utilisation en temps réel et alertes à 80%"
+        ]
+      },
+      workspace: {
+        icon: "👥",
+        title: "Workspace",
+        description: "Multi-comptes et gestion d'équipe",
+        list: [
+          "Gérez plusieurs chaînes YouTube avec isolation totale des données",
+          "Invitez votre équipe avec 4 niveaux de permissions (Propriétaire, Admin, Membre, Visiteur)",
+          "Contrôlez qui peut modifier les paramètres IA, valider les réponses ou consulter",
+          "Centralisez toutes vos marques dans une interface unique"
+        ]
+      }
+    },
     pricing: {
       title: "💰 Pricing simple et transparent",
       subtitle: "Choisissez le plan qui correspond à vos besoins",
       solo: {
         title: "📱 Plan Solo",
         description: "Parfait pour YouTube uniquement",
-        free: {
-          name: "🆓 Free",
-          price: "0€",
+        starter: {
+          name: "🚀 Starter",
+          price: "9€",
           period: "/mois",
-          description: "Idéal pour tester l'IA sur vos commentaires",
+          description: "Idéal pour démarrer avec l'IA",
           features: [
             "YouTube uniquement",
             "1 compte connecté",
-            "50 réponses automatiques/mois",
+            "100 réponses automatiques/mois",
             "Configuration de base",
             "1 langue"
           ]
         },
         standard: {
-          name: "⚡ Standard",
-          price: "19€",
+          name: "⭐ Standard",
+          price: "29€",
           period: "/mois",
           description: "Pour une utilisation régulière sur YouTube",
           features: [
             "YouTube uniquement",
             "2 comptes connectés",
-            "1,000 réponses automatiques/mois",
+            "500 réponses automatiques/mois",
             "IA avancée + règles personnalisées",
             "2 langues configurables",
             "Analytics de base"
@@ -117,13 +144,13 @@ export const translations = {
         },
         premium: {
           name: "🚀 Premium",
-          price: "49€",
+          price: "59€",
           period: "/mois",
           description: "Pour une utilisation intensive sur YouTube",
           features: [
             "YouTube uniquement",
             "5 comptes connectés",
-            "10,000 réponses automatiques/mois",
+            "1200 réponses automatiques/mois",
             "Toutes les fonctionnalités IA",
             "3 langues configurables",
             "Analytics avancés",
@@ -135,27 +162,27 @@ export const translations = {
         title: "🌐 Plan Multi",
         description: "YouTube + Facebook + Instagram",
         free: {
-          name: "🆓 Free",
-          price: "0€",
+          name: "🚀 Starter",
+          price: "15€",
           period: "/mois",
           description: "Testez sur les 3 plateformes principales",
           features: [
             "3 plateformes (YouTube + Facebook + Instagram)",
             "1 compte par plateforme",
-            "50 réponses automatiques/mois (total)",
+            "100 réponses automatiques/mois (total)",
             "Configuration de base",
             "1 langue"
           ]
         },
         standard: {
-          name: "⚡ Standard",
-          price: "29€",
+          name: "⭐ Standard",
+          price: "39€",
           period: "/mois",
           description: "Automatisation complète multi-plateformes",
           features: [
             "3 plateformes (YouTube + Facebook + Instagram)",
             "2 comptes par plateforme",
-            "1,000 réponses automatiques/mois (total)",
+            "500 réponses automatiques/mois (total)",
             "IA avancée + règles personnalisées",
             "3 langues configurables",
             "Analytics détaillés",
@@ -164,14 +191,14 @@ export const translations = {
           popular: "🔥 Plus populaire"
         },
         premium: {
-          name: "🏢 Premium",
-          price: "69€",
+          name: "👑 Premium",
+          price: "79€",
           period: "/mois",
           description: "Pour les agences et équipes",
           features: [
             "3 plateformes (YouTube + Facebook + Instagram)",
             "5 comptes par plateforme",
-            "10,000 réponses automatiques/mois (total)",
+            "1200 réponses automatiques/mois (total)",
             "Gestion d'équipe (2 sièges)",
             "Export analytics",
             "Modèles personnalisés",
@@ -207,12 +234,12 @@ export const translations = {
     },
     meta: {
       title: "Nexa Reply - AI That Manages Your Comments Automatically",
-      description: "Stop wasting 3 hours a day replying to comments. The AI that handles YouTube, Facebook and Instagram automatically."
+      description: "Your audience speaks. Your AI replies like you would have. The AI that handles YouTube, Facebook and Instagram automatically."
     },
     hero: {
-      title: "Stop wasting",
-      titleHighlight: "3 hours a day",
-      titleEnd: "replying to comments",
+      title: "Your audience speaks.",
+      titleHighlight: "Your AI replies",
+      titleEnd: "like you would have.",
       subtitle: "The AI that manages your YouTube, Facebook and Instagram comments while you focus on what matters.",
       subtitleBold: "2-minute setup. Instant results.",
       stats: {
@@ -230,7 +257,7 @@ export const translations = {
         }
       },
       cta: {
-        button: "🔥 50% Lifetime Discount - First 50 People",
+        button: "🔥 50% Off First 6 Months - First 50 People",
         explanation: "Product in beta - Contact us to reserve your spot among the first 50 and be notified of the launch"
       }
     },
@@ -259,7 +286,7 @@ export const translations = {
             "<strong>Languages:</strong> Main + 2 additional max",
             "<strong>Delay:</strong> Instant, 5min, 30min, 1h...",
             "<strong>Schedule:</strong> 24/7 or custom time slots",
-            "<strong>Rules:</strong> \"No medical advice\", \"Redirect collabs to email\""
+            "<strong>Rules:</strong> &quot;No medical advice&quot;, &quot;Redirect collabs to email&quot;"
           ]
         },
         step3: {
@@ -280,34 +307,61 @@ export const translations = {
         description: "Your audience receives personalized 24/7 replies. Your community stays engaged, you keep time for what really matters."
       }
     },
+    features: {
+      title: "🎯 Advanced Features",
+      subtitle: "Professional tools to manage your automation",
+      reporting: {
+        icon: "📊",
+        title: "Reporting & Analytics",
+        description: "Monitor your automation",
+        list: [
+          "Track sent replies and AI average response time",
+          "Visualize 30-day evolution with interactive charts",
+          "Check complete history: original comment, generated reply, related video",
+          "Export your data to CSV with custom filters",
+          "Manage your quotas: real-time usage and 80% alerts"
+        ]
+      },
+      workspace: {
+        icon: "👥",
+        title: "Workspace",
+        description: "Multi-account and team management",
+        list: [
+          "Manage multiple YouTube channels with complete data isolation",
+          "Invite your team with 4 permission levels (Owner, Admin, Member, Visitor)",
+          "Control who can modify AI settings, validate replies or view only",
+          "Centralize all your brands in a single interface"
+        ]
+      }
+    },
     pricing: {
       title: "💰 Simple and Transparent Pricing",
       subtitle: "Choose the plan that fits your needs",
       solo: {
         title: "📱 Solo Plan",
         description: "Perfect for YouTube only",
-        free: {
-          name: "🆓 Free",
-          price: "€0",
+        starter: {
+          name: "🚀 Starter",
+          price: "€9",
           period: "/month",
           description: "Ideal to test AI on your comments",
           features: [
             "YouTube only",
             "1 connected account",
-            "50 automatic replies/month",
+            "100 automatic replies/month",
             "Basic configuration",
             "1 language"
           ]
         },
         standard: {
-          name: "⚡ Standard",
-          price: "€19",
+          name: "⭐ Standard",
+          price: "€29",
           period: "/month",
           description: "For regular YouTube usage",
           features: [
             "YouTube only",
             "2 connected accounts",
-            "1,000 automatic replies/month",
+            "500 automatic replies/month",
             "Advanced AI + custom rules",
             "2 configurable languages",
             "Basic analytics"
@@ -315,13 +369,13 @@ export const translations = {
         },
         premium: {
           name: "🚀 Premium",
-          price: "€49",
+          price: "€59",
           period: "/month",
           description: "For intensive YouTube usage",
           features: [
             "YouTube only",
             "5 connected accounts",
-            "10,000 automatic replies/month",
+            "1200 automatic replies/month",
             "All AI features",
             "3 configurable languages",
             "Advanced analytics",
@@ -332,28 +386,28 @@ export const translations = {
       multi: {
         title: "🌐 Multi Plan",
         description: "YouTube + Facebook + Instagram",
-        free: {
-          name: "🆓 Free",
-          price: "€0",
+        starter: {
+          name: "🚀 Starter",
+          price: "€15",
           period: "/month",
           description: "Test on the 3 main platforms",
           features: [
             "3 platforms (YouTube + Facebook + Instagram)",
             "1 account per platform",
-            "50 automatic replies/month (total)",
+            "100 automatic replies/month (total)",
             "Basic configuration",
             "1 language"
           ]
         },
         standard: {
-          name: "⚡ Standard",
-          price: "€29",
+          name: "⭐ Standard",
+          price: "€39",
           period: "/month",
           description: "Complete multi-platform automation",
           features: [
             "3 platforms (YouTube + Facebook + Instagram)",
             "2 accounts per platform",
-            "1,000 automatic replies/month (total)",
+            "500 automatic replies/month (total)",
             "Advanced AI + custom rules",
             "3 configurable languages",
             "Detailed analytics",
@@ -362,14 +416,14 @@ export const translations = {
           popular: "🔥 Most Popular"
         },
         premium: {
-          name: "🏢 Premium",
-          price: "€69",
+          name: "👑 Premium",
+          price: "€79",
           period: "/month",
           description: "For agencies and teams",
           features: [
             "3 platforms (YouTube + Facebook + Instagram)",
             "5 accounts per platform",
-            "10,000 automatic replies/month (total)",
+            "1200 automatic replies/month (total)",
             "Team management (2 seats)",
             "Analytics export",
             "Custom templates",
@@ -405,12 +459,12 @@ export const translations = {
     },
     meta: {
       title: "Nexa Reply - IA Que Gestiona Tus Comentarios Automáticamente",
-      description: "Deja de perder 3 horas al día respondiendo comentarios. La IA que gestiona YouTube, Facebook e Instagram automáticamente."
+      description: "Tu audiencia habla. Tu IA responde como tú lo habrías hecho. La IA que gestiona YouTube, Facebook e Instagram automáticamente."
     },
     hero: {
-      title: "Deja de perder",
-      titleHighlight: "3 horas al día",
-      titleEnd: "respondiendo comentarios",
+      title: "Tu audiencia habla.",
+      titleHighlight: "Tu IA responde",
+      titleEnd: "como tú lo habrías hecho.",
       subtitle: "La IA que gestiona tus comentarios de YouTube, Facebook e Instagram mientras te concentras en lo esencial.",
       subtitleBold: "Configuración en 2 minutos. Resultados inmediatos.",
       stats: {
@@ -428,7 +482,7 @@ export const translations = {
         }
       },
       cta: {
-        button: "🔥 50% Descuento de Por Vida - Primeras 50 Personas",
+        button: "🔥 50% de Descuento los Primeros 6 Meses - Primeras 50 Personas",
         explanation: "Producto en fase beta - Contáctanos para reservar tu lugar entre los primeros 50 y ser notificado del lanzamiento"
       }
     },
@@ -457,7 +511,7 @@ export const translations = {
             "<strong>Idiomas:</strong> Principal + 2 adicionales máx",
             "<strong>Retraso:</strong> Instantáneo, 5min, 30min, 1h...",
             "<strong>Horarios:</strong> 24/7 o franjas personalizadas",
-            "<strong>Reglas:</strong> \"Sin consejos médicos\", \"Redirigir colaboraciones al email\""
+            "<strong>Reglas:</strong> &quot;Sin consejos médicos&quot;, &quot;Redirigir colaboraciones al email&quot;"
           ]
         },
         step3: {
@@ -478,34 +532,61 @@ export const translations = {
         description: "Tu audiencia recibe respuestas personalizadas 24/7. Tu comunidad permanece comprometida, tú guardas tiempo para lo que realmente importa."
       }
     },
+    features: {
+      title: "🎯 Funcionalidades Avanzadas",
+      subtitle: "Herramientas profesionales para gestionar tu automatización",
+      reporting: {
+        icon: "📊",
+        title: "Reporting & Analytics",
+        description: "Controla tu automatización",
+        list: [
+          "Sigue tus respuestas enviadas y tiempo de respuesta promedio de la IA",
+          "Visualiza la evolución de 30 días con gráficos interactivos",
+          "Consulta el historial completo: comentario original, respuesta generada, video relacionado",
+          "Exporta tus datos en CSV con filtros personalizados",
+          "Gestiona tus cuotas: uso en tiempo real y alertas al 80%"
+        ]
+      },
+      workspace: {
+        icon: "👥",
+        title: "Workspace",
+        description: "Multi-cuentas y gestión de equipo",
+        list: [
+          "Gestiona varios canales de YouTube con aislamiento total de datos",
+          "Invita a tu equipo con 4 niveles de permisos (Propietario, Admin, Miembro, Visitante)",
+          "Controla quién puede modificar configuración IA, validar respuestas o solo consultar",
+          "Centraliza todas tus marcas en una interfaz única"
+        ]
+      }
+    },
     pricing: {
       title: "💰 Precios Simples y Transparentes",
       subtitle: "Elige el plan que se adapta a tus necesidades",
       solo: {
         title: "📱 Plan Solo",
         description: "Perfecto solo para YouTube",
-        free: {
-          name: "🆓 Gratis",
-          price: "0€",
+        starter: {
+          name: "🚀 Starter",
+          price: "9€",
           period: "/mes",
           description: "Ideal para probar la IA en tus comentarios",
           features: [
             "Solo YouTube",
             "1 cuenta conectada",
-            "50 respuestas automáticas/mes",
+            "100 respuestas automáticas/mes",
             "Configuración básica",
             "1 idioma"
           ]
         },
         standard: {
-          name: "⚡ Estándar",
-          price: "19€",
+          name: "⭐ Estándar",
+          price: "29€",
           period: "/mes",
           description: "Para uso regular en YouTube",
           features: [
             "Solo YouTube",
             "2 cuentas conectadas",
-            "1,000 respuestas automáticas/mes",
+            "500 respuestas automáticas/mes",
             "IA avanzada + reglas personalizadas",
             "2 idiomas configurables",
             "Analíticas básicas"
@@ -513,13 +594,13 @@ export const translations = {
         },
         premium: {
           name: "🚀 Premium",
-          price: "49€",
+          price: "59€",
           period: "/mes",
           description: "Para uso intensivo en YouTube",
           features: [
             "Solo YouTube",
             "5 cuentas conectadas",
-            "10,000 respuestas automáticas/mes",
+            "1200 respuestas automáticas/mes",
             "Todas las funcionalidades IA",
             "3 idiomas configurables",
             "Analíticas avanzadas",
@@ -530,28 +611,28 @@ export const translations = {
       multi: {
         title: "🌐 Plan Multi",
         description: "YouTube + Facebook + Instagram",
-        free: {
-          name: "🆓 Gratis",
-          price: "0€",
+        starter: {
+          name: "🚀 Starter",
+          price: "15€",
           period: "/mes",
           description: "Prueba en las 3 plataformas principales",
           features: [
             "3 plataformas (YouTube + Facebook + Instagram)",
             "1 cuenta por plataforma",
-            "50 respuestas automáticas/mes (total)",
+            "100 respuestas automáticas/mes (total)",
             "Configuración básica",
             "1 idioma"
           ]
         },
         standard: {
-          name: "⚡ Estándar",
-          price: "29€",
+          name: "⭐ Estándar",
+          price: "39€",
           period: "/mes",
           description: "Automatización completa multiplataforma",
           features: [
             "3 plataformas (YouTube + Facebook + Instagram)",
             "2 cuentas por plataforma",
-            "1,000 respuestas automáticas/mes (total)",
+            "500 respuestas automáticas/mes (total)",
             "IA avanzada + reglas personalizadas",
             "3 idiomas configurables",
             "Analíticas detalladas",
@@ -560,14 +641,14 @@ export const translations = {
           popular: "🔥 Más Popular"
         },
         premium: {
-          name: "🏢 Premium",
-          price: "69€",
+          name: "👑 Premium",
+          price: "79€",
           period: "/mes",
           description: "Para agencias y equipos",
           features: [
             "3 plataformas (YouTube + Facebook + Instagram)",
             "5 cuentas por plataforma",
-            "10,000 respuestas automáticas/mes (total)",
+            "1200 respuestas automáticas/mes (total)",
             "Gestión de equipo (2 puestos)",
             "Exportar analíticas",
             "Plantillas personalizadas",
@@ -595,3 +676,5 @@ export const translations = {
     }
   }
 };
+
+export default translations;

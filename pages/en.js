@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import LanguageSelector from '../components/LanguageSelector'
-import { translations } from '../translations'
+import translations from '../translations'
 
 export default function EnglishPage() {
   const t = translations.en;
-
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -135,6 +135,38 @@ export default function EnglishPage() {
           </div>
         </section>
 
+        {/* Features Section */}
+        <section className={styles.features}>
+          <div className={styles.featuresContent}>
+            <h2>{t.features.title}</h2>
+            <p className={styles.featuresSubtitle}>{t.features.subtitle}</p>
+            
+            <div className={styles.featuresGrid}>
+              <div className={styles.featureCard}>
+                <div className={styles.featureIcon}>{t.features.reporting.icon}</div>
+                <h3>{t.features.reporting.title}</h3>
+                <p className={styles.featureDescription}>{t.features.reporting.description}</p>
+                <ul className={styles.featureList}>
+                  {t.features.reporting.list.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className={styles.featureCard}>
+                <div className={styles.featureIcon}>{t.features.workspace.icon}</div>
+                <h3>{t.features.workspace.title}</h3>
+                <p className={styles.featureDescription}>{t.features.workspace.description}</p>
+                <ul className={styles.featureList}>
+                  {t.features.workspace.list.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.pricing} id="pricing">
           <h2>{t.pricing.title}</h2>
           <p className={styles.pricingSubtitle}>{t.pricing.subtitle}</p>
@@ -145,12 +177,12 @@ export default function EnglishPage() {
             
             <div className={styles.pricingGrid}>
               <div className={styles.pricingCard}>
-                <h4>{t.pricing.solo.free.name}</h4>
-                <div className={styles.price}>{t.pricing.solo.free.price}</div>
-                <div className={styles.pricePeriod}>{t.pricing.solo.free.period}</div>
-                <p className={styles.priceDescription}>{t.pricing.solo.free.description}</p>
+                <h4>{t.pricing.solo.starter.name}</h4>
+                <div className={styles.price}>{t.pricing.solo.starter.price}</div>
+                <div className={styles.pricePeriod}>{t.pricing.solo.starter.period}</div>
+                <p className={styles.priceDescription}>{t.pricing.solo.starter.description}</p>
                 <ul className={styles.features}>
-                  {t.pricing.solo.free.features.map((feature, i) => (
+                  {t.pricing.solo.starter.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
                   ))}
                 </ul>
@@ -188,12 +220,12 @@ export default function EnglishPage() {
             
             <div className={styles.pricingGrid}>
               <div className={styles.pricingCard}>
-                <h4>{t.pricing.multi.free.name}</h4>
-                <div className={styles.price}>{t.pricing.multi.free.price}</div>
-                <div className={styles.pricePeriod}>{t.pricing.multi.free.period}</div>
-                <p className={styles.priceDescription}>{t.pricing.multi.free.description}</p>
+                <h4>{t.pricing.multi.starter.name}</h4>
+                <div className={styles.price}>{t.pricing.multi.starter.price}</div>
+                <div className={styles.pricePeriod}>{t.pricing.multi.starter.period}</div>
+                <p className={styles.priceDescription}>{t.pricing.multi.starter.description}</p>
                 <ul className={styles.features}>
-                  {t.pricing.multi.free.features.map((feature, i) => (
+                  {t.pricing.multi.starter.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
                   ))}
                 </ul>
