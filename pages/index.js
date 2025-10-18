@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import LanguageSelector from '../components/LanguageSelector'
+import Footer from '../components/Footer'  // ← Import du Footer
 
 export default function Home() {
   return (
@@ -350,6 +351,11 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* ========== FOOTER AJOUTÉ ICI ========== */}
+      <Footer />
+      {/* ======================================== */}
+
     </div>
   )
 }
