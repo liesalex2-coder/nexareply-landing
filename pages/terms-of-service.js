@@ -57,17 +57,23 @@ export default function TermsOfService() {
         </header>
 
         <div className={styles.importantBox}>
-          <p>
-            <strong>{t.ytAgreement}</strong> {t.ytAgreementText}
-            <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">{t.ytTerms}</a>
-            {t.ytAgreementEnd}
-          </p>
+          <p><strong>IMPORTANT - {t.ytAgreement}</strong></p>
+          <p>{t.ytAgreementText}<a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">{t.ytTerms}</a>{t.ytAgreementEnd}</p>
+          <p><strong>You must comply with YouTube's Terms of Service at all times when using Nexa Reply.</strong></p>
         </div>
 
         <section>
           <h2>1. Acceptance of Terms</h2>
           <p>Welcome to Nexa Reply. These Terms of Service ("Terms") govern your access to and use of Nexa Reply's website, applications, and services (collectively, the "Service").</p>
-          <p>By accessing or using our Service, you agree to be bound by these Terms and our <Link href="/privacy-policy">Privacy Policy</Link>. If you do not agree to these Terms, you may not use the Service.</p>
+          <p><strong>By accessing or using our Service, you agree to be bound by:</strong></p>
+          <ul>
+            <li>These Terms of Service</li>
+            <li>Our <Link href="/privacy-policy">Privacy Policy</Link></li>
+            <li>The <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a></li>
+            <li>The <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          </ul>
+          <p>If you do not agree to these Terms AND the YouTube Terms of Service, you may not use the Service.</p>
+          <p><strong>Age Requirement:</strong> You must be at least 18 years old to use Nexa Reply. By using the Service, you represent and warrant that you meet this age requirement.</p>
         </section>
 
         <section>
@@ -91,6 +97,7 @@ export default function TermsOfService() {
             <li>Your use of YouTube data through Nexa Reply is subject to YouTube's Terms of Service</li>
             <li>YouTube may modify, suspend, or discontinue their API at any time</li>
             <li>We are not responsible for changes to YouTube's services or policies</li>
+            <li>You must comply with YouTube's Community Guidelines</li>
           </ul>
 
           <h3>3.2 Google Privacy Policy</h3>
@@ -130,18 +137,22 @@ export default function TermsOfService() {
             <li>Exceed rate limits or abuse the Service</li>
             <li>Use the service to generate misleading or harmful content</li>
             <li>Attempt to reverse engineer or compromise the Service</li>
+            <li>Share your account credentials with others</li>
+            <li>Use the Service for unauthorized commercial purposes</li>
           </ul>
         </section>
 
         <section>
           <h2>6. AI-Generated Content</h2>
           <div className={styles.highlightBox}>
-            <p><strong>Important:</strong> You acknowledge that:</p>
+            <p><strong>Important Notice About AI-Generated Replies:</strong></p>
+            <p>You acknowledge and agree that:</p>
             <ul>
               <li>AI-generated content may not always be accurate, appropriate, or error-free</li>
               <li>You are solely responsible for reviewing and approving all replies before posting</li>
               <li>You retain full editorial control and responsibility for all content posted through the Service</li>
               <li>Nexa Reply is not liable for any AI-generated content you choose to publish</li>
+              <li>You must ensure all AI-generated replies comply with YouTube's policies</li>
             </ul>
           </div>
         </section>
@@ -153,40 +164,108 @@ export default function TermsOfService() {
         </section>
 
         <section>
-          <h2>8. Disclaimer of Warranties</h2>
+          <h2>8. Payment and Subscription</h2>
+          <h3>8.1 Pricing</h3>
+          <p>Certain features of the Service require a paid subscription. Current pricing is available on our website.</p>
+
+          <h3>8.2 Billing</h3>
+          <ul>
+            <li>Subscriptions are billed in advance on a monthly basis</li>
+            <li>All fees are non-refundable except as required by law</li>
+            <li>We reserve the right to change pricing with 30 days notice</li>
+          </ul>
+
+          <h3>8.3 Cancellation</h3>
+          <p>You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period.</p>
+        </section>
+
+        <section>
+          <h2>9. Disclaimer of Warranties</h2>
           <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
-          <p>We do not warrant that the Service will be uninterrupted, secure, or error-free, or that any defects will be corrected.</p>
+          <p>We do not warrant that:</p>
+          <ul>
+            <li>The Service will be uninterrupted, secure, or error-free</li>
+            <li>Any defects will be corrected</li>
+            <li>AI-generated content will be accurate or appropriate</li>
+            <li>The Service will meet your specific requirements</li>
+          </ul>
         </section>
 
         <section>
-          <h2>9. Limitation of Liability</h2>
+          <h2>10. Limitation of Liability</h2>
           <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEXA REPLY SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.</p>
+          <p>Our total liability for any claims under these Terms shall not exceed the amount you paid us in the 12 months preceding the claim.</p>
         </section>
 
         <section>
-          <h2>10. Termination</h2>
+          <h2>11. Indemnification</h2>
+          <p>You agree to indemnify, defend, and hold harmless Nexa Reply from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
+          <ul>
+            <li>Your use of the Service</li>
+            <li>Your violation of these Terms</li>
+            <li>Your violation of YouTube's Terms of Service</li>
+            <li>Content you post through the Service</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>12. Termination</h2>
           <p>We reserve the right to suspend or terminate your access to the Service immediately, without prior notice or liability, for any reason, including but not limited to:</p>
           <ul>
             <li>Breach of these Terms</li>
             <li>Violation of YouTube's Terms of Service</li>
             <li>Fraudulent, abusive, or illegal activity</li>
+            <li>Non-payment of fees</li>
             <li>At our sole discretion</li>
           </ul>
-          <p>Upon termination, your right to use the Service will cease immediately. You may also terminate your account at any time by contacting us.</p>
+          <p>Upon termination:</p>
+          <ul>
+            <li>Your right to use the Service ceases immediately</li>
+            <li>We may delete your account and data</li>
+            <li>You remain liable for all fees incurred prior to termination</li>
+          </ul>
+          <p>You may also terminate your account at any time by contacting us at hello@nexareply.com</p>
         </section>
 
         <section>
-          <h2>11. Changes to Terms</h2>
-          <p>We reserve the right to modify these Terms at any time. If we make material changes, we will notify you by email or through the Service. Your continued use of the Service after such modifications constitutes your acceptance of the updated Terms.</p>
+          <h2>13. Changes to Terms</h2>
+          <p>We reserve the right to modify these Terms at any time. If we make material changes:</p>
+          <ul>
+            <li>We will notify you by email or through the Service</li>
+            <li>Changes take effect 30 days after notification</li>
+            <li>Your continued use after changes constitutes acceptance</li>
+            <li>If you don't agree to changes, you must stop using the Service</li>
+          </ul>
         </section>
 
         <section>
-          <h2>12. Governing Law</h2>
+          <h2>14. Governing Law and Dispute Resolution</h2>
           <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles.</p>
+          <p>Any disputes arising from these Terms or the Service shall be resolved through:</p>
+          <ul>
+            <li>Good faith negotiations first</li>
+            <li>Binding arbitration if negotiations fail</li>
+            <li>Small claims court for eligible claims</li>
+          </ul>
         </section>
 
         <section>
-          <h2>13. Contact Information</h2>
+          <h2>15. Miscellaneous</h2>
+          <h3>15.1 Entire Agreement</h3>
+          <p>These Terms, together with our Privacy Policy and YouTube's Terms of Service, constitute the entire agreement between you and Nexa Reply.</p>
+
+          <h3>15.2 Severability</h3>
+          <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full effect.</p>
+
+          <h3>15.3 Waiver</h3>
+          <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+
+          <h3>15.4 Assignment</h3>
+          <p>You may not assign or transfer these Terms. We may assign our rights without restriction.</p>
+        </section>
+
+        <section>
+          <h2>16. Contact Information</h2>
           <p>For questions about these Terms, please contact us:</p>
           <ul>
             <li><strong>Email:</strong> <a href="mailto:hello@nexareply.com">hello@nexareply.com</a></li>
@@ -196,7 +275,9 @@ export default function TermsOfService() {
         </section>
 
         <div className={styles.highlightBox}>
-          <p><strong>Important:</strong> By using Nexa Reply, you agree to both these Terms and the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.</p>
+          <p><strong>Important Reminder:</strong></p>
+          <p>By using Nexa Reply, you agree to both these Terms and the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.</p>
+          <p>Please review both documents carefully.</p>
         </div>
 
         <div className={styles.footerLink}>
