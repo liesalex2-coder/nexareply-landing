@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import LanguageSelector from '../components/LanguageSelector'
+import Footer from '../components/Footer'  // ← LIGNE AJOUTÉE
 import translations from '../translations'
 
 export default function SpanishPage() {
@@ -135,7 +136,6 @@ export default function SpanishPage() {
           </div>
         </section>
 
-        {/* Features Section */}
         <section className={styles.features}>
           <div className={styles.featuresContent}>
             <h2>{t.features.title}</h2>
@@ -306,6 +306,11 @@ export default function SpanishPage() {
           </div>
         </section>
       </main>
+
+      {/* ========== FOOTER AJOUTÉ ICI ========== */}
+      <Footer />
+      {/* ======================================== */}
+
     </div>
   )
 }
